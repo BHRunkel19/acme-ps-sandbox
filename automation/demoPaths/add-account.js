@@ -6,7 +6,7 @@ const allSelectors = listSelectors.concat(layoutSelectors);
 module.exports = async (browser) => {
     const newPage = await browser.newPage();
 
-    await newPage.goto('https://BHRunkel19.github.io/');
+    await newPage.goto('https://BHRunkel19.github.io/acme-ps-sandbox');
     await newPage.waitFor(500);
 
     await newPage.evaluate(() => {
