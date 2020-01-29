@@ -13,9 +13,8 @@ const Navigation = ({onNavClick}) => (
 	<div className="nav-bar">
 		<div className="logo">
 			<h3>
-				Acme CRM
+				Demo App
 			</h3>
-			<img src={require("./clouds.png")} alt="logo" id="cloud-logo"/>
 		</div>
 		<Menu
 			theme='dark'

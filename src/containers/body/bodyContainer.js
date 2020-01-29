@@ -5,7 +5,7 @@ import { withRouter } from 'react-router-dom';
 // To update navigation
 const mapStateToProps = (state) => {
 	return {
-		title: state.Navigation
+		title: 'Demo App'
 	}
 }
 

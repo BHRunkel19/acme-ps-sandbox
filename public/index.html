@@ -130,16 +130,25 @@
                 console.log("Pendo is ready!")
               },
               guidesLoaded: function() {
-                var e, o;
-                console.log("The guides have loaded!"), pendo.guides, e = pendo.lastGuideStepSeen, o = e.guideId, console.log(e), o && console.log("The user has just seen this guide: " + o)
+                console.log("The guides have loaded!")
+                lookupGuides(pendo.guides);
+                // callback //
               },
               guidesFailed: function() {
                 console.log("The guides have failed!")
               }
             }
         });
+
+        // input callback here //
+        function lookupGuides(guides){
+          console.log(guides);
+          // loop over list of guides, determine whats active
+        }
+
 })('c918848b-3472-4f46-5084-90e4d056ec05');
 </script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.js"></script>
   <!-- DON'T FORGET PROPER METADATA! -->
 
   <!--
