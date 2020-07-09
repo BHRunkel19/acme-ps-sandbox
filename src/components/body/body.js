@@ -42,12 +42,6 @@ export default class Body extends React.Component {
 
 	// Open Modal
 	_onAddNew(e) {
-		console.log(e);
-		e.preventDefault();
-		pendo.track("Record Added", {
-			element: e.target.value,
-			name: "Test"
-		});
 		this.setState({
 			visible: true
 		})
