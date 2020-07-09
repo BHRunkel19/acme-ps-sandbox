@@ -42,8 +42,8 @@ export default class Body extends React.Component {
 
 	// Open Modal
 	_onAddNew(e) {
+		console.log(e);
 		e.preventDefault();
-		console.log('Track Event firing');
 		pendo.track("Record Added", {
 			element: e.target.value,
 			name: "Test"
